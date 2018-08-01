@@ -1,0 +1,23 @@
+{
+  "name": "order-management-system",
+  "version": "1.0.0",
+  "description": "This is a Node Order Management application that uses MySQL database to store data. The app will take in orders from customers and deplete stock from the store's inventory.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chad-balash/order-management-system.git"
+  },
+  "author": "Chad Balash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chad-balash/order-management-system/issues"
+  },
+  "homepage": "https://github.com/chad-balash/order-management-system#readme",
+  "dependencies": {
+    "inquirer": "^6.0.0",
+    "mysql": "^2.16.0"
+  }
+}
