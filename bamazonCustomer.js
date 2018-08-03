@@ -62,19 +62,19 @@ const connection = mysql.createConnection({
       console.log('\nSelecting all products for sale...\n')
       connection.query('SELECT item_id, product_name, price FROM products', function(err, res) {
           if (err) throw err;
-          for (let i = 0; i < res.length; i++) {
-            console.log('Item#: ' + res[i].item_id + ' || Description: ' + res[i].product_name + ' || Price: ' + res[i].price);
-          }
+          res.forEach(row => {
+            console.log('Item#: ' + row.item_id + ' || Description: ' + row.product_name + ' || Price: ' + row.price);
+          });
           runShop();
       })
   }
 
-
+// 
   function order() {
     inquirer
       .prompt([
         {
-          name: 'itemID',
+          name: 'itemId',
           type: 'input',
           message: 'Enter the item number of the product you would like to purchase.',
         },
@@ -85,17 +85,18 @@ const connection = mysql.createConnection({
         }
       ])
       .then(function(answer){
-        connection.query('SELECT * FROM products WHERE ?', {item_id: answer.itemID}, function(err, res) {
+        connection.query('SELECT * FROM products WHERE ?', {item_id: answer.itemId}, function(err, res) {
+          if (err) throw err;
           console.log('Item#: ' + res[0].item_id + ' || Description: ' + res[0].product_name + ' || Price: ' + res[0].price);
           let stockAvailable = res[0].stock_quantity;
           let quantityRequest = answer.quantity;
-          if(quantityRequest > stockAvailable) {
-            console.log('There is not enough stockAvailable...');
+          if (quantityRequest > stockAvailable) {
+            console.log('We only have ' + stockAvailable + ' units available.');
           } else {
             console.log('We have enough stock');
           }
 
         });
-        // console.log(answer.itemID + ' ' + answer.quantity);
+        // console.log(answer.itemId + ' ' + answer.quantity);
       })
   }
