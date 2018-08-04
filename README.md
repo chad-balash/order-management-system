@@ -5,26 +5,26 @@ This is a Node Order Management application that uses MySQL database to store da
 # Install
 This is a Node.js application
 
-Before installing, download and install Node.js. Node.js 0.6 or higher is required.
+Before installing, download and install Node.js.
 
 Clone Repository
 
-Install dependencies by running the below command
+Install dependencies by running npm install
 
-```
+```javascript
 $ npm install
 ```
 
-Execute files 'schema.sql' and 'seeds.sql' to build the sql db
+Execute files `schema.sql` and `seeds.sql` to build the sql db
 
-Enter your sql credentials
+Enter your sql credentials in `bamazonCustomer.js` for user and password
 
-```
+```javascript
 const connection = mysql.createConnection({
     host     : 'localhost',
     port     : 3306,
-    **user     : '',**
-    **password : '',**
+    user     : '',
+    password : '',
     database : 'bamazon'
   });
   ```
