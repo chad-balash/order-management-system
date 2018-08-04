@@ -1,8 +1,8 @@
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUE ('URG-2026', 'Disposable Gloves, Large, 5 Pair Per Bag', 'First Aid Refills', 1.90, 32);
+VALUE ('URG-2026', 'Disposable Gloves, Large, 5 Pair Per Bag', 'First Aid Refills', 1.95, 32);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUE ('URG-2429', '3"x4" Non-Adherent Pad, 50 Per Bag', 'First Aid Refills', 6.00, 91);
+VALUE ('URG-2429', '3"x4" Non-Adherent Pad, 50 Per Bag', 'First Aid Refills', 6.22, 91);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
 VALUE ('URG-247B', '3 Shelf Industrial ANSI B+ First Aid Station - 100 Person', 'First Aid Cabinets', 172.66, 22);
@@ -26,12 +26,12 @@ INSERT INTO products (item_id, product_name, department_name, price, stock_quant
 VALUE ('URG-3662', 'OSHA Contractors First Aid Kit, Metal, 25 Person', 'Contractor First Aid Kits', 23.45, 141);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUE ('URG-3663', 'OSHA Contractors First Aid Kit, Plastic, 50 Person', 'Contractor First Aid Kits', 28.20, 42);
+VALUE ('URG-3663', 'OSHA Contractors First Aid Kit, Plastic, 50 Person', 'Contractor First Aid Kits', 28.25, 42);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
 VALUE ('URG-3681', 'Bulk Urgent First Aid Kit, Plastic, 74 pc, ANSI A, 25 Person', 'Bulk First Aid Kits', 19.99, 52);
 
 INSERT INTO products (item_id, product_name, department_name, price, stock_quantity)
-VALUE ('URG-3685', 'Bulk Urgent First Aid Kit Refill, 197 pc, ANSI B, 50 Person', 'Bulk First Aid Kits', 49.60, 27);
+VALUE ('URG-3685', 'Bulk Urgent First Aid Kit Refill, 197 pc, ANSI B, 50 Person', 'Bulk First Aid Kits', 49.65, 27);
 
 SELECT * FROM products;

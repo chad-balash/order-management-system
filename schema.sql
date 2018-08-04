@@ -11,4 +11,14 @@ CREATE TABLE products (
     PRIMARY KEY (item_id)
 );
 
+CREATE TABLE orders (
+	id INT NOT NULL AUTO_INCREMENT,
+	item_id VARCHAR(40) NOT NULL,
+    order_quantity INT(10),
+    PRIMARY KEY (id)
+    
+);
+
+
 SELECT * FROM products;
+SELECT * FROM orders;
