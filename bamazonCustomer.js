@@ -129,7 +129,7 @@ const connection = mysql.createConnection({
                   '\nOrder Receipt\n' + 
                   '\nSubTotal: ' + ((answer.quantity * res[0].price).toFixed(2)) + 
                   '\nShipping: ' + 5.95 + 
-                  '\nTotal: ' + ((answer.quantity * res[0].price) + 5.95) + 
+                  '\nTotal: ' + (((answer.quantity * res[0].price) + 5.95).toFixed(2)) + 
                   '\n\nThanks for shopping Bamazon!'
                 );
               }

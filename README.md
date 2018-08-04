@@ -33,7 +33,10 @@ Then launch application by typing `node bamazonCustomer.js` in terminal/bash
 
 ## Screenshots
 
-Coming Soon
+![Screenshot](/screenshot.jpg)
+
+## Video
+[Video](https://drive.google.com/open?id=1_a5Gqomh5Syfsb2_1-a46wgkkoqZyhmT)
 
 ## Built With
 
