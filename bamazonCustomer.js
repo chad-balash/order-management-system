@@ -124,12 +124,13 @@ const connection = mysql.createConnection({
               ],
               function(err) {
                 if (err) throw err;
-                console.log('\nItem added to order');
                 console.log(
-                  '\nSubTotal: ' + (answer.quantity * res[0].price) + 
+                  '\nOrder processed and fulfilled!\n' + 
+                  '\nOrder Receipt\n' + 
+                  '\nSubTotal: ' + ((answer.quantity * res[0].price).toFixed(2)) + 
                   '\nShipping: ' + 5.95 + 
-                  '\nTotal: ' + ((answer.quantity * res[0].price) + 5.95)
-
+                  '\nTotal: ' + ((answer.quantity * res[0].price) + 5.95) + 
+                  '\n\nThanks for shopping Bamazon!'
                 );
               }
             )

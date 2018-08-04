@@ -1,4 +1,4 @@
-# order-management-system
+# Order Management System
 
 This is a Node Order Management application that uses MySQL database to store data. The app will take in orders from customers and deplete stock from the store's inventory.
 
@@ -7,12 +7,41 @@ This is a Node.js application
 
 Before installing, download and install Node.js. Node.js 0.6 or higher is required.
 
-Clone Repository 
+Clone Repository
+
+Install dependencies by running the below command
 
 ```
 $ npm install
 ```
 
-Sometimes I may also ask you to install the latest version from Github to check if a bugfix is working. In this case, please do:
+Execute files 'schema.sql' and 'seeds.sql' to build the sql db
 
-$ npm install mysqljs/mysql
+Enter your sql credentials
+
+```
+const connection = mysql.createConnection({
+    host     : 'localhost',
+    port     : 3306,
+    **user     : '',**
+    **password : '',**
+    database : 'bamazon'
+  });
+  ```
+
+
+## Screenshots
+
+Coming Soon
+
+## Built With
+
+* node, javascript, mysql
+
+## Authors
+
+* **Chad Balash** - [Profile](https://github.com/chad-balash)
+
+## Acknowledgments
+
+* I would like to thank my instructors and Google for helping me complete this project.
