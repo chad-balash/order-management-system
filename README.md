@@ -29,6 +29,7 @@ const connection = mysql.createConnection({
   });
   ```
 
+Then launch application by typing `node bamazonCustomer.js` in terminal/bash
 
 ## Screenshots
 
